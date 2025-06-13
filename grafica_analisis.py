@@ -1,4 +1,7 @@
 
+with open("cefim.txt", "r", encoding="utf-8") as f:
+    cefim = f.read()
+
 
 class graficar_y_analizar():
   def __init__(self, entorno, graficar, model):
@@ -31,10 +34,11 @@ class graficar_y_analizar():
         resp_anteriores = f"{k}: {v}"
         break
 
-    texto = f"""Contesta la pregunta {pregunta}, tenla en cuenta siempre como principal dato.
+    texto = f"""Contesta la pregunta como si fueras un investigador del CEFIM {pregunta}, tenla en cuenta siempre como principal dato.
               Para contestar, ten en cuenta el gráfico {self.fig} como principal análisis, siempre toma en cuenta los últimos periodos para ser actualizada la respuesta.
               Además, ten en cuenta los datos relevantes que estan en {datos_relevantes}.
               También ten en cuenta el entorno de explicación del gráfico que es este {self.entorno}.
+              Ten en cuenta lo que opinan los especialistas en el CEFIM {cefim}.
               Por último ten en cuenta las respuestas a las preguntas del usuario en {resp_anteriores}
               """
 

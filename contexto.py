@@ -48,3 +48,4 @@ explicacion_comp_prom = """##  <font color="lightblue"> Comparación de recaudac
          
         Se presenta la información con un gráfico de barras comparando la recaudación actual con el promedio. Este primero es de los recursos de origen provincial, más adelante los de origen nacional. La cantiddad de meses que se visualiza varía de acuerdo a la cantidad de información disponible. 
         """
+
