@@ -1,0 +1,7 @@
+# Ignorar la carpeta del entorno virtual
+venv/
+
+# Ignorar el archivo de secretos
+.streamlit/secrets.toml
+
+PresupMendoza_trabajo.ipynb
