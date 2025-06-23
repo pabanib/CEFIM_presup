@@ -61,3 +61,4 @@ except Exception as e:
     st.error(f"Ha ocurrido un error al procesar el análisis: {e}")
 
 # ...existing code...
+# %%

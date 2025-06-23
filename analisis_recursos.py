@@ -30,6 +30,9 @@ presup_act.loc[:,'prom_prov'] = rec_prom.iloc[:ult_mes,0].values
 presup_act.loc[:,'prom_nac'] = rec_prom.iloc[:ult_mes,1].values
 presup_act
 
+#%%
+
+#%%
 # @title
 def graf_comp_prom():
     fig = px.bar(presup_act[['De Origen Provincial', 'prom_prov']],barmode = 'group', title = 'Comparación recursos prov. con promedio')
@@ -53,10 +56,12 @@ datos_relevantes = {
 }
 
 
-evol_recursos = graficar_y_analizar(explicacion_evol_recu, graf_evol_recursos,model)
+evol_recursos = graficar_y_analizar(explicacion_evol_recu, graf_evol_recursos,model,presup_prov[['De Origen Provincial','De Origen Nacional']])
 evol_recursos.datos_relevantes(datos_relevantes)
+#evol_recursos.estadisticas = estadisticas
 
 # %%
-comp_prom = graficar_y_analizar(explicacion_comp_prom,graf_comp_prom,model)
+comp_prom = graficar_y_analizar(explicacion_comp_prom,graf_comp_prom,model,presup_act[['De Origen Provincial', 'prom_prov']])
+#comp_prom.estadisticas = estadisticas
 
 # %%
