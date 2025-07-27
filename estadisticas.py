@@ -79,7 +79,7 @@ class AnalizadorEstadistico:
     def evolucion(self, df: pd.DataFrame):
         estadisticas = {}
         estadisticas['tendencia_mensual'] = df.rolling(window=12).mean()
-        estadisticas['tendencia_anual'] = df.resample('YE').rolling(window=4).mean()
+        estadisticas['tendencia_anual'] = df.resample('YE').mean().rolling(window=4).mean()
         return estadisticas
 
     def maximo_minimo(self, df: pd.DataFrame):
@@ -91,3 +91,22 @@ class AnalizadorEstadistico:
         
         return estadisticas
 
+
+# --- NUEVA FUNCIÓN: La "Puerta de Entrada" o "Llave de Arranque" ---
+def ejecutar_analisis_estadistico(df, clasificacion):
+    """
+    Recibe el DataFrame y la clasificación, usa la clase AnalizadorEstadistico
+    y devuelve un DICCIONARIO de estadísticas relevantes.
+    """
+    tipo_estadistica = clasificacion.get('estadistica', 'rec_actual') # ej: 'promedio'
+    periodo = clasificacion.get('periodo', 'historico') # ej: 'historico'
+
+    # 1. Instanciamos tu potente clase
+    analizador = AnalizadorEstadistico(df)
+    
+    # 2. Usamos tu método .analizar() para obtener el diccionario de estadísticas
+    try:
+        diccionario_de_stats = analizador.analizar(tipo_estadistica, periodo)
+        return diccionario_de_stats
+    except ValueError as e:
+        return {"error": str(e)}

@@ -1,4 +1,8 @@
 
+with open("cefim.txt", "r", encoding="utf-8") as archivo:
+        # El método .read() lee todo el contenido del archivo en una sola cadena de texto
+        contexto_cefim = archivo.read()
+
 introduccion = """
         El presupuesto provincial es el principal instrumento de política económica que tiene la provincia de Mendoza para planificar y gestionar sus recursos. A través de él, se establecen las prioridades de gasto y se asignan los fondos necesarios para el desarrollo de políticas públicas, infraestructura, educación, salud y otros servicios esenciales. En este sentido, el presupuesto no solo refleja las decisiones económicas del gobierno provincial, sino que también actúa como un indicador de la dirección en la que se moverá la economía local.
 
@@ -49,3 +53,10 @@ explicacion_comp_prom = """##  <font color="lightblue"> Comparación de recaudac
         Se presenta la información con un gráfico de barras comparando la recaudación actual con el promedio. Este primero es de los recursos de origen provincial, más adelante los de origen nacional. La cantiddad de meses que se visualiza varía de acuerdo a la cantidad de información disponible. 
         """
 
+datos_relevantes = {
+    "Periodos_de_quiebre" : "2016 con inicio de gobierno cambiemos. 2020 pandemia del COVID19. Noviembre 2023 victoria de Milei ",
+    "Valor de los datos": "Los datos están expresados a valores hoy, por lo tanto tienen en cuenta el efecto inflacionario",
+    "recursos": "Se ven los recursos de origen provincial que es lo que recauda la provincia por su propia cuenta. Por otro lado los recursos que coparticipa la nación",
+    "Implicancias": "Los recursos son una buena proxy de la economía, si aumentan indica crecimiento de la economía.",
+    "Tendencia" : "Luego de la tendencia alzista hasta 2016, los recursos muestran un estancamiento"
+}

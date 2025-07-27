@@ -1,0 +1,180 @@
+Análisis de las Perspectivas Económicas del Centro de Economía y Finanzas de Mendoza (CEFI Mendoza)
+I. Introducción a los Análisis Económicos de CEFI Mendoza
+A. Panorama General de CEFI Mendoza
+El Centro de Economía y Finanzas de Mendoza (CEFI Mendoza) se constituye como una entidad dedicada al análisis económico y financiero, con el objetivo de proveer soluciones estratégicas y asesoramiento tanto a empresas como a entidades gubernamentales. Sus áreas de especialización abarcan un espectro amplio que incluye el análisis económico coyuntural y estructural, la planificación financiera, la ciencia de datos aplicada a la economía, el análisis de grandes volúmenes de información (Big Data) y el asesoramiento en materia de finanzas públicas. La metodología de trabajo del centro se distingue por la integración de técnicas avanzadas de análisis de datos económicos y financieros, el desarrollo de modelos econométricos para proyecciones, la evaluación del impacto de políticas públicas y un asesoramiento económico-financiero especializado, complementado con el desarrollo de herramientas analíticas personalizadas. Este enfoque subraya un compromiso con el rigor analítico y la aplicación de métodos cuantitativos sofisticados en sus investigaciones.   
+
+B. Pericia y Composición del Equipo
+La solidez de los análisis de CEFI Mendoza se fundamenta en la alta calificación de su equipo profesional, el cual posee una robusta formación académica en economía y finanzas. Entre sus miembros destacados se encuentran Pablo Quintana, Doctor en Economía con especialización en Econometría y Ciencia de Datos; Nicolás Aroma, Contador Público (UNC) con especialización en Finanzas Públicas (UNLP); y Lisandro Vergara Amodeo, Licenciado en Ciencias Políticas con orientación en Finanzas y Mercados.   
+
+Esta diversidad de especializaciones sugiere que el centro aborda los fenómenos económicos desde una perspectiva multifacética. La combinación de un experto en econometría, capaz de aportar rigor cuantitativo y modelización avanzada; un especialista en finanzas públicas, con profundo conocimiento de la contabilidad gubernamental y los mecanismos fiscales; y un analista con formación en ciencias políticas y finanzas, apto para interpretar las dimensiones de economía política y los contextos institucionales, permite a CEFI Mendoza trascender el mero análisis de datos. Sus investigaciones tienden a integrar la modelización económica con una comprensión de la administración pública, los factores políticos y las consecuencias sociales de las decisiones económicas. Esta aproximación multidisciplinaria es crucial para desarrollar perspectivas matizadas y comprensivas sobre problemáticas complejas, ofreciendo análisis que no solo describen la situación económica, sino que también exploran sus mecanismos subyacentes y sus posibles impulsores políticos o institucionales.
+
+C. Propósito y Alcance de este Informe
+El presente documento tiene como finalidad sintetizar los principales temas, argumentos y conclusiones que se desprenden de diversos informes y publicaciones elaborados por CEFI Mendoza, con base en la información disponible. El análisis se centrará en las perspectivas del centro sobre cuestiones críticas de la economía nacional argentina y las condiciones económicas específicas de la provincia de Mendoza.
+
+D. Informes Clave de CEFI Mendoza
+Para ofrecer una visión estructurada de los trabajos que fundamentan este análisis, se presenta la siguiente tabla con una selección de informes relevantes de CEFI Mendoza:
+
+Tabla 1: Panorama de Informes Clave de CEFI Mendoza Discutidos
+
+Título del Informe
+
+Fecha de Publicación
+
+Autor(es)
+
+Foco Principal / Argumento Central
+
+El talento devaluado. La economía política y el salario
+
+12/05/2025
+
+Pablo Quintana, Nicolás Aroma
+
+El estancamiento salarial en Argentina frena el crecimiento económico; las políticas actuales priorizan los incentivos al capital en detrimento del trabajo.   
+
+Alerta en el tablero: el índice de febrero prende la luz roja
+
+17/03/2025
+
+Nicolás Aroma, Pablo Quintana
+
+El aumento del IPC de febrero (2025) rompe la tendencia descendente y señala un posible rebote inflacionario en Argentina, con indicadores que encienden alarmas.   
+
+La Argentina en su laberinto: otra vez Caputo toma más deuda con el FMI
+
+10/03/2025
+
+Lisandro Vergara Amodeo
+
+Argentina incrementa su deuda con el FMI mediante "trampas contables" y eludiendo la aprobación del Congreso, en una repetición de mecanismos pasados.   
+
+Informe CEFIM - Una deuda con la economía de Mendoza (título inferido)
+
+(circa 2021)
+
+(No especificado en el material)
+
+Quintuplicación de la deuda pública de Mendoza (2016-2019), su extranjerización y el impacto negativo severo en la economía provincial y el bienestar social.   
+
+Detrás de las medidas, la apuesta del Plan de Milei
+
+04/01/2024
+
+Nicolás Aroma
+
+Análisis de las implicaciones de un plan económico nacional más amplio, con posibles efectos regionales.   
+
+Un análisis de disparidades regionales de salarios registrados, a través de métodos de regionalización
+
+28/06/2023
+
+Nicolás Aroma
+
+Investigación sobre las diferencias salariales entre regiones, utilizando metodologías específicas de regionalización.   
+
+La necesidad de un shock sobre la economía de Mendoza: Estimación de impactos económicos de un plan de vivienda
+
+08/06/2023
+
+Nicolás Aroma
+
+Propuesta y estimación del impacto económico de un plan de vivienda como medida de estímulo para la economía de Mendoza.   
+
+Deuda y Desigualdad en Mendoza
+
+15/02/2023
+
+Nicolás Aroma
+
+Análisis de la relación entre el endeudamiento provincial y los niveles de desigualdad en Mendoza.   
+
+Esta tabla sirve como un inventario organizado del material fuente analizado, permitiendo una rápida comprensión de la amplitud temática cubierta por CEFI Mendoza y facilitando la referencia a los informes específicos que sustentan las secciones subsiguientes de este documento.
+
+II. Cuestiones Económicas Clave en Argentina: Perspectivas de CEFI Mendoza
+A. Navegando las Presiones Inflacionarias
+Uno de los focos de atención de CEFI Mendoza es la persistente problemática inflacionaria en Argentina. En su informe titulado "Alerta en el tablero: el índice de febrero prende la luz roja", fechado el 17 de marzo de 2025, los analistas Nicolás Aroma y Pablo Quintana expresan una preocupación significativa. El argumento central del informe radica en que el Índice de Precios al Consumidor (IPC) de febrero de ese año "rompe su monotonía descendente y se muestra más alto que enero". Esta interrupción de una tendencia previa a la baja en la inflación suscita la interrogante: "¿Se vendrá un rebote de la inflación?". El reporte subraya la existencia de indicadores que "encienden la alarma en este sentido".   
+
+La relevancia de este análisis es considerable, dado que la inflación es una característica endémica y perjudicial de la economía argentina. Un potencial rebote inflacionario, tras un período de aparente moderación, tendría consecuencias directas sobre la estabilidad económica, el poder adquisitivo de la población y las decisiones de política económica. La terminología empleada en el informe –"alerta", "luz roja", "rompe su monotonía descendente"– no sugiere una fluctuación estadística menor, sino una advertencia seria. Que se quiebre una "monotonía descendente" implica que un período de caídas consistentes en la tasa de inflación, que podría haber generado cierto optimismo o complacencia en la política económica, ha llegado a su fin. Este cambio abrupto sugiere que los factores que impulsaron la desinflación previa podrían haber sido de naturaleza temporal, insostenibles en el tiempo, o estar siendo superados por nuevas presiones inflacionarias. La "luz roja" que CEFI Mendoza identifica parece indicar que su análisis ha detectado indicadores subyacentes específicos (aunque no detallados en los extractos disponibles) que apuntan hacia una renovada aceleración de los precios. Esta interpretación va más allá de la simple observación de un dato; es una evaluación de ese dato como un posible punto de inflexión o un síntoma de desequilibrios económicos más profundos y aún no resueltos. Por lo tanto, la advertencia de CEFI Mendoza apunta a la necesidad de que tanto los responsables de la política económica como los agentes económicos miren más allá de las cifras de desinflación superficiales, evalúen críticamente la sostenibilidad de dichas tendencias y permanezcan vigilantes ante los impulsores inflacionarios estructurales que podrían no haber sido abordados de manera efectiva.   
+
+B. El Laberinto de la Deuda Pública y la Política Fiscal (Nivel Nacional)
+El endeudamiento público y la política fiscal a nivel nacional constituyen otra área de profundo análisis por parte de CEFI Mendoza, como se evidencia en el informe "La Argentina en su laberinto: otra vez Caputo toma más deuda con el FMI", elaborado por Lisandro Vergara Amodeo y fechado el 10 de marzo de 2025. El argumento principal de este reporte es que el gobierno argentino, bajo la administración del presidente Milei y el ministro Caputo, estaría incrementando nuevamente la deuda externa con el Fondo Monetario Internacional (FMI) a través de lo que se describe como una "trampa contable". Una acusación central es la presunta elusión de la aprobación del Congreso Nacional para esta nueva toma de deuda y el acuerdo con el FMI. Según el análisis, esta acción contravendría la Ley 27.612 (conocida como "Ley Guzmán"), la cual estipula que todo endeudamiento externo fuera del Presupuesto o acuerdos con el FMI deben ser aprobados por el Congreso mediante una ley específica. En su lugar, se estaría recurriendo a un Decreto de Necesidad y Urgencia (DNU) para legitimar la operación.   
+
+Este modus operandi se compara con acciones implementadas en 2018, sugiriendo un patrón de conducta que busca sortear los controles republicanos en aras de la expediency, posiblemente con motivaciones vinculadas a ciclos electorales. Se postula que el verdadero motivo detrás de la obtención de estos "nuevos fondos frescos" del FMI sería permitir al gobierno una intervención discrecional en el mercado cambiario con el fin de mantener un tipo de cambio fijo hasta las elecciones, buscando consolidar la desinflación antes de levantar los controles de cambio hacia finales de 2025. Aunque se presente la operación como una que no incrementa la deuda del Tesoro, CEFI Mendoza argumenta que sí aumentará la Deuda Pública Consolidada y, de manera crítica, la Deuda Externa en moneda extranjera, todo ello sin la debida supervisión parlamentaria. Esta situación, se advierte, impone una carga a las futuras generaciones y es calificada de "inmoralidad".   
+
+El énfasis del informe en los aspectos procedimentales y legales, particularmente la supuesta violación de la Ley Guzmán 27.612 y el uso de un DNU, trasciende una mera discrepancia política. La Ley 27.612 representa un marco legal diseñado para asegurar la supervisión congresional sobre el endeudamiento nacional significativo. Intentar eludir esta ley mediante un DNU constituye un desafío a la separación de poderes y a los procesos legislativos establecidos. Al enmarcar esto como un "desprecio por la República y la seguridad jurídica" , CEFI Mendoza eleva la cuestión a una preocupación sobre principios fundamentales de gobernanza. La referencia a 2018 sugiere una posible recurrencia en la que el poder ejecutivo podría estar excediendo sus atribuciones en asuntos financieros críticos, lo que, de validarse, debilitaría las instituciones democráticas y los marcos legales, propiciando una concentración de poder en la toma de decisiones económicas trascendentales. Esto, a su vez, podría mermar la transparencia, la rendición de cuentas y la confianza pública, generando un entorno de incertidumbre jurídica perjudicial para la inversión y la estabilidad económica a largo plazo.   
+
+Adicionalmente, el concepto de "trampa contable" merece atención. El informe señala que estos "nuevos fondos frescos" del FMI, si bien podrían presentarse como no incrementales para la deuda del Tesoro, sí engrosarían la Deuda Pública Consolidada y, fundamentalmente, la Deuda Externa en moneda extranjera. La distinción entre la deuda del Tesoro (obligaciones directas) y la Deuda Pública Consolidada (medida más amplia) es relevante. Sin embargo, el punto crítico que CEFI Mendoza subraya es el aumento de la    
+
+Deuda Externa en moneda extranjera. Para un país con el historial de Argentina en crisis cambiarias y acceso limitado a los mercados de capitales internacionales, un incremento en este tipo de deuda representa una vulnerabilidad significativa, independientemente de su clasificación contable interna. La analogía de la "familia" donde el "esposo (Tesoro) deberá menos a su esposa (Banco Central) y más al 'matón del barrio' (FMI)"  ilustra vívidamente cómo, aunque la contabilidad interna pueda cambiar, el endeudamiento externo general de la nación con un acreedor poderoso aumenta. Esto sugiere un intento de opacar la verdadera magnitud de las nuevas obligaciones en divisas, posiblemente para gestionar la opinión pública o cumplir metas fiscales superficiales, mientras que la exposición subyacente de la economía argentina a shocks externos y dificultades de servicio de la deuda en moneda extranjera se intensifica.   
+
+Finalmente, la presunta politización de la política económica es un tema central. El informe afirma que el "verdadero motivo" de estos fondos es "permitir al gobierno una intervención discrecional en el mercado cambiario para mantener un tipo de cambio fijo hasta las elecciones, con el objetivo de consolidar la desinflación antes de levantar los controles cambiarios a finales de 2025". La gestión del tipo de cambio y la inflación son variables clave que influyen en la percepción pública y los resultados electorales en Argentina. Utilizar fondos del FMI para estabilizar artificialmente el tipo de cambio antes de unas elecciones es una táctica cortoplacista que puede generar distorsiones macroeconómicas (como un tipo de cambio sobrevaluado o una inflación reprimida que resurge posteriormente). Esto indica que decisiones económicas críticas, como la toma de deuda externa significativa, podrían estar impulsadas por el calendario político en lugar de por necesidades de reforma estructural o sostenibilidad económica a largo plazo. La referencia a "cargar a las generaciones futuras con deuda con fines electorales"  subraya la inequidad intergeneracional de tales políticas, que a menudo conducen a trayectorias insostenibles y crisis más profundas una vez que las medidas artificiales se revierten o resultan insuficientes.   
+
+C. Talento Devaluado: El Desafío del Estancamiento Salarial
+El informe "El talento devaluado. La economía política y el salario", con fecha del 12 de mayo de 2025 y autoría de Pablo Quintana y Nicolás Aroma, aborda una problemática fundamental del mercado laboral y la distribución del ingreso en Argentina. La tesis central de este trabajo es que "el estancamiento salarial frena el crecimiento económico". Se critica que las políticas económicas vigentes priorizan los "incentivos al capital" y han "relegado al otro gran factor productivo: el trabajo". Este análisis toca un aspecto crucial del desarrollo económico y la equidad social, ya que los salarios reales estancados pueden deprimir la demanda interna, exacerbar la desigualdad y obstaculizar el desarrollo del capital humano.   
+
+La observación de que las políticas "priorizan los incentivos al capital y han relegado al... trabajo"  apunta a una elección deliberada en la orientación de la política económica. El crecimiento económico depende de la combinación eficiente de capital y trabajo, así como de las ganancias de productividad. Un sesgo político que favorece fuertemente los incentivos al capital (por ejemplo, mediante exenciones fiscales a la inversión o desregulación favorable a las empresas) sin un apoyo correspondiente al factor trabajo (a través del crecimiento salarial, la protección de los trabajadores o el desarrollo de habilidades) puede generar desequilibrios estructurales. Si los salarios se estancan, el consumo interno, un motor clave de la demanda agregada, tiende a debilitarse. Esto puede conducir a una situación paradójica en la que las empresas, incentivadas a invertir, encuentran una demanda insuficiente para sus productos y servicios, lo que hace que esas inversiones sean menos rentables o sostenibles a largo plazo. La expresión "talento devaluado" sugiere un costo social que va más allá de lo puramente económico, implicando un fracaso en la valoración y la inversión en el capital humano del país. El análisis de CEFI Mendoza, por lo tanto, señala una posible falla en el modelo económico imperante, sugiriendo que descuidar el componente laboral y el crecimiento de los salarios no es solo un problema social, sino también un impedimento macroeconómico para un crecimiento económico sostenible e inclusivo. Implica la necesidad de un enfoque más equilibrado, que reconozca el papel fundamental del ingreso laboral en el impulso de la demanda y la productividad.   
+
+III. Enfoque Económico en la Provincia de Mendoza
+A. Dinámica de la Deuda Provincial y Salud Fiscal
+La situación fiscal de la provincia de Mendoza es objeto de un análisis detallado en el "Informe CEFIM - Una deuda con la economía de Mendoza" (cuyo título se infiere del nombre de un archivo PDF referenciado en , con contenido extraído de la misma fuente). Este informe describe un severo deterioro de las finanzas provinciales como consecuencia de un drástico incremento y un cambio estructural en su deuda pública durante el período 2016-2019. Según el análisis, el stock de deuda no solo "se quintuplicó" en esos años, sino que también experimentó un "proceso de extranjerización", pasando a estar mayoritariamente compuesta por bonos en dólares. Este vertiginoso aumento del endeudamiento no se vio acompañado por un crecimiento de la capacidad productiva provincial que permitiera generar los recursos necesarios para su repago.   
+
+Las consecuencias de esta dinámica para Mendoza fueron múltiples y graves. La carga de los servicios de la deuda (intereses y amortización) creció de manera desproporcionada en relación con los impuestos recaudados localmente, "deteriorando la posición financiera provincial". Se produjo una reorientación del gasto público desde la economía real (inversión en obras públicas, salud, educación) hacia el "gasto financiero improductivo". Esta reasignación de recursos conllevó un "altísimo 'costo de oportunidad'", ya que el Estado provincial debió abandonar roles estratégicos en diversas áreas. El modelo adoptado de "'ajuste para pagar deuda'" condujo a un "círculo vicioso recesivo", empujando a la provincia de un "default financiero al default económico y social". La evidencia de este deterioro incluye una caída del Producto Bruto Geográfico (PBG) provincial y un aumento del desempleo.   
+
+El análisis de CEFI Mendoza sobre la experiencia de Mendoza sirve como un caso de estudio contundente sobre cómo una gestión insostenible de la deuda a nivel subnacional puede tener efectos devastadores. La quintuplicación de la deuda en un corto período (2016-2019) representa un shock masivo para las finanzas de cualquier entidad subnacional. La "extranjerización" de esta deuda, es decir, su denominación predominante en dólares estadounidenses, introdujo un riesgo cambiario significativo, volviendo los costos del servicio de la deuda altamente volátiles y dependientes de las devaluaciones de la moneda nacional – factores en gran medida exógenos al control provincial. El problema central radica en que "El aumento exorbitante de la Deuda Pública no se vio plasmado en un crecimiento de la capacidad productiva provincial que generara la capacidad de repago" ; la deuda no se utilizó de manera productiva. Como resultado directo, los recursos se desviaron: "El gasto público en concepto de Pago de Intereses de la Deuda Pública aumentó por encima del resto de partidas de erogaciones vinculadas a la economía real" , lo que demuestra un claro efecto de desplazamiento (crowding-out). El "círculo vicioso recesivo" –austeridad para pagar la deuda que contrae la economía, reduce la recaudación fiscal, hace que la deuda sea relativamente mayor y exige más austeridad– es un escenario clásico de trampa de deuda. Esta experiencia subraya la importancia crítica de una gestión prudente de la deuda, la inversión productiva de los fondos obtenidos por endeudamiento y una cuidadosa consideración de la composición monetaria de la deuda para los gobiernos regionales.   
+
+Un aspecto crucial de esta vulnerabilidad es la "extranjerización" de la deuda. El informe establece explícitamente que la deuda de Mendoza pasó a estar "mayoritariamente compuesta por bonos en dólares y, por lo tanto, supeditada a factores exógenos a la economía provincial (como el aumento del tipo de cambio y la devaluación de la moneda nacional)". Los gobiernos provinciales generan sus ingresos principalmente en moneda local (pesos, a través de impuestos locales y fondos de coparticipación federal). Cuando una porción significativa de su deuda está denominada en una moneda extranjera, cualquier devaluación de la moneda local aumenta automáticamente la carga real del servicio de esa deuda en términos de pesos. Esta exposición a "factores exógenos" significa que el gobierno provincial tiene poco o ningún control sobre el tipo de cambio nacional, pero su estabilidad fiscal se vuelve altamente dependiente de él. Se crea así un descalce entre la moneda de los ingresos y la moneda de una gran parte de los egresos (servicio de la deuda). La extranjerización de la deuda subnacional introduce, por tanto, un elemento significativo de riesgo financiero incontrolable, haciendo que las finanzas provinciales sean extremadamente vulnerables a la volatilidad macroeconómica nacional, particularmente a las devaluaciones cambiarias, que pueden escalar rápidamente los costos del servicio de la deuda y desencadenar crisis fiscales incluso si la gestión fiscal provincial es, por lo demás, sólida.   
+
+B. Disparidades Regionales, Necesidades de Desarrollo y Propuestas de Política para Mendoza
+El trabajo de CEFI Mendoza sobre la provincia de Mendoza no se limita a las cuestiones fiscales. Varios títulos de informes, principalmente de autoría de Nicolás Aroma, sugieren un análisis más amplio de los desequilibrios económicos internos y la búsqueda de soluciones proactivas. Entre ellos se encuentran: "Un análisis de disparidades regionales de salarios registrados, a través de métodos de regionalización" (28/06/2023), "La necesidad de un shock sobre la economía de Mendoza: Estimación de impactos económicos de un plan de vivienda" (08/06/2023), y "Deuda y Desigualdad en Mendoza" (15/02/2023). El informe "Detrás de las medidas, la apuesta del Plan de Milei" (04/01/2024), aunque de alcance nacional, también indica un análisis de planes más amplios con impacto en las regiones.   
+
+Estos títulos revelan un enfoque temático que abarca las disparidades salariales regionales dentro de la provincia, la interrelación entre el endeudamiento provincial y la desigualdad, y, de manera crucial, la exploración de intervenciones de política activa, como un plan de vivienda, con el fin de estimular la economía provincial. La identificación de "disparidades regionales de salarios" y la conexión entre "Deuda y Desigualdad en Mendoza" demuestra una preocupación por los impactos distributivos de las condiciones y políticas económicas dentro de Mendoza, más allá de las cifras agregadas. El informe sobre un "plan de vivienda" y la "estimación de impactos económicos" de dicho plan significa un paso más allá del mero diagnóstico de los problemas. Indica que CEFI Mendoza se involucra en investigación aplicada para evaluar soluciones potenciales y palancas de política para la revitalización económica. La propuesta de un "shock" (estímulo) como un plan de vivienda sugiere una perspectiva con posibles influencias keynesianas para abordar el estancamiento económico, centrándose en la generación de demanda y empleo. Esto demuestra que el compromiso de CEFI Mendoza con los problemas provinciales no es únicamente crítico o diagnóstico; también parece ser constructivo y orientado a la búsqueda de soluciones. No solo analizan lo que está mal, sino que también investigan y potencialmente abogan por políticas específicas destinadas a fomentar un desarrollo regional más equitativo y dinámico, mostrando un compromiso con la aplicación práctica de su pericia económica en beneficio de la región de Mendoza.   
+
+IV. Perspectiva Sintetizada: Preocupaciones Dominantes y Posición Analítica de CEFI Mendoza
+El conjunto de trabajos de CEFI Mendoza revela una serie de preocupaciones recurrentes y una postura analítica distintiva frente a los desafíos económicos de Argentina y la provincia de Mendoza.
+
+A. Preocupación Persistente por la Sostenibilidad de la Deuda y sus Costos Socioeconómicos
+Un tema dominante que atraviesa tanto los análisis nacionales como los provinciales es el impacto perjudicial de la acumulación insostenible de deuda y las políticas fiscales implementadas para su gestión. Esto incluye la extranjerización de la deuda, la pesada carga del servicio de la deuda que desplaza el gasto público esencial y los ciclos recesivos resultantes.   
+
+B. Crítica a Políticas Desconectadas de la Economía Real y el Bienestar Social
+Los informes de CEFI Mendoza consistentemente señalan una desconexión entre las decisiones de política financiera o macroeconómica y sus impactos tangibles sobre la capacidad productiva, el empleo, los niveles salariales y la equidad social (por ejemplo, "El talento devaluado"  y el declive económico de Mendoza ). Subyace un argumento implícito de que las políticas deben, en última instancia, servir a la economía real y al bienestar de la población.   
+
+C. Énfasis en la Integridad Institucional y el Estado de Derecho en la Gobernanza Económica
+La fuerte crítica a la elusión de la aprobación del Congreso para la deuda con el FMI  subraya la preocupación de CEFI Mendoza por la adherencia a los marcos legales, los controles y equilibrios institucionales, y la transparencia en la toma de decisiones económicas.   
+
+D. Enfoque en el Elemento Humano: Salarios, Desigualdad y Servicios Públicos
+Los informes sobre el estancamiento salarial , la deuda y la desigualdad en Mendoza , y los recortes en los servicios públicos debido a las cargas de la deuda  revelan un enfoque constante en cómo las políticas económicas afectan a los ciudadanos comunes y la distribución de los recursos.   
+
+Considerando estos elementos en conjunto, se perfila a CEFI Mendoza como un proponente de un paradigma económico más holístico y responsable. Sus análisis desafían consistentemente las narrativas económicas prevalecientes o las políticas que perciben como perjudiciales para un desarrollo equitativo y a largo plazo. La crítica a la acumulación de deuda  no se limita a las cifras, sino que se extiende a los costos de oportunidad y la carga impuesta a las generaciones futuras. El análisis del estancamiento salarial  lo vincula directamente con un crecimiento económico obstaculizado, cuestionando los modelos puramente centrados en el capital. Su alarma ante un posible rebote inflacionario  demuestra una vigilancia contra las amenazas al poder adquisitivo. La firme postura sobre la adhesión a los procesos legales para la deuda nacional  resalta una convicción en la rendición de cuentas democrática en asuntos económicos. Además, su trabajo específico sobre Mendoza  evidencia un compromiso con el desarrollo regional y la atención a las desigualdades. En suma, el trabajo colectivo de CEFI Mendoza parece abogar por un paradigma económico que no solo sea fiscalmente sostenible, sino también socialmente equitativo, institucionalmente sólido y, en última instancia, orientado a mejorar las condiciones reales de la economía y la vida de sus habitantes. Promueven la transparencia, la corrección legal y una consideración equilibrada de todos los actores económicos, en particular el trabajo y los receptores de servicios públicos, en la formulación de la política económica.   
+
+V. Resumen Concluyente
+Los análisis económicos producidos por el Centro de Economía y Finanzas de Mendoza (CEFI Mendoza) abordan con profundidad y rigor una gama de cuestiones críticas para la economía argentina y la provincia de Mendoza. Sus principales áreas de escrutinio incluyen la política fiscal y el endeudamiento a nivel nacional, con un énfasis particular en las relaciones con el FMI y los aspectos de gobernanza institucional; la dinámica inflacionaria y sus riesgos subyacentes; y las problemáticas del mercado laboral, especialmente el estancamiento salarial y su impacto en el crecimiento. A nivel provincial, CEFI Mendoza se enfoca en los desafíos económicos específicos de Mendoza, tales como la sostenibilidad de su deuda pública, la relación entre endeudamiento y desigualdad, y la necesidad de políticas de estímulo para el desarrollo regional.
+
+A través de sus informes, CEFI Mendoza se posiciona como una voz analítica importante, que ofrece perspectivas basadas en datos, a menudo críticas y orientadas a la búsqueda de soluciones, sobre complejos problemas económicos. La aproximación multidisciplinaria de su equipo, que combina la econometría, las finanzas públicas y el análisis político-económico, permite una comprensión integral que vincula las tendencias económicas con el comportamiento institucional, las decisiones políticas y sus consecuencias sociales. El centro consistentemente aboga por una mayor transparencia, el respeto por los marcos legales e institucionales, y una orientación de la política económica hacia la mejora del bienestar general y la equidad, desafiando enfoques que considera perjudiciales para la estabilidad y el desarrollo sostenible.
+
+
+Mendoza y Presupuesto
+
+El artículo analiza el estancamiento económico de Mendoza en la última década, atribuido a un "cepo al desarrollo" causado por el creciente endeudamiento público que limita la inversión y el crecimiento.
+
+Aquí están los puntos principales de la nota:
+
+Estancamiento económico: La economía de Mendoza no ha crecido en los últimos diez años, con una contracción del 0,6% en 2023 y una previsión de caída superior al 4% para este año.
+
+Deuda pública: Los pagos de la deuda superan la inversión pública, lo que frena el desarrollo.
+
+Dolarización de la deuda: La mayor parte de la deuda está en dólares, lo que la hace vulnerable a factores externos.
+
+Costo de oportunidad: El dinero gastado en la deuda podría haberse invertido en salud, educación y obras públicas.
+
+Impacto social: El estancamiento y la deuda han aumentado la pobreza y la indigencia.
+
+Necesidad de cambio: Se necesita una nueva estrategia económica para solucionar el problema de la deuda y que Mendoza vuelva a crecer
+
+
+Recaudación y Actividad económica.
+
+Desde el CEFIM opinamos que la falta de presencia del Estado ha causado un daño claro a la economía de Mendoza. Si uno analiza Mendoza desde hace diez años que no crece y esto se debe a una política austera por parte del Estado que no ha logrado incentivar la inversión privada.
+
+La recaudación de Mendoza, centrada principalmente en ingresos brutos, que es un impuesto que grava la actividad económica, es una buena variable proxy de la economía Mendocina. 
+
+En los últimos años la participación de la recaudación de orígenes provincial a caído con respecto a la recaudación de orígen Nacional, esto explica que en los años en que ha gobernado Cambiemos la economía provincial no a crecido como la nacional.
