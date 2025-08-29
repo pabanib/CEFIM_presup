@@ -10,7 +10,7 @@ def configurar_modelo_llm():
     """Configura y devuelve el modelo de IA generativa de Google."""
     try:
         genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-        modelo = genai.GenerativeModel('gemini-1.5-flash')
+        modelo = genai.GenerativeModel('gemini-2.0-flash')
         return modelo
     except Exception as e:
         # Si hay un error (ej. falta la API key), lo mostramos en la app.
