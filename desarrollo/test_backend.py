@@ -1,9 +1,9 @@
 # test_backend.py
 #%%
 # 1. Import all your "backend" specialists
-from carga_datos import cargar_y_procesar_datos
-from motor_clasificador import ClasificadorIntencion
-import estadisticas
+from datos_y_analisis.carga_datos import cargar_y_procesar_datos
+from motores.motor_clasificador import ClasificadorIntencion
+import datos_y_analisis.estadisticas as estadisticas
 #%%
 def test_single_question(pregunta: str):
     """

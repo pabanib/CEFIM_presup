@@ -1,7 +1,7 @@
 #%%
 import streamlit as st
 import sys
-from analisis_recursos import evol_recursos,comp_prom
+from datos_y_analisis.analisis_recursos import evol_recursos,comp_prom
 
 
 # %%

@@ -1,5 +1,7 @@
+import os
 
-with open("cefim.txt", "r", encoding="utf-8") as archivo:
+ruta_archivo = os.path.join(os.path.dirname(__file__), "cefim.txt")
+with open(ruta_archivo, "r", encoding="utf-8") as archivo:
         # El método .read() lee todo el contenido del archivo en una sola cadena de texto
         contexto_cefim = archivo.read()
 

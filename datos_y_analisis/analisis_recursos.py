@@ -3,8 +3,8 @@
 #genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 #model = genai.GenerativeModel('gemini-2.0-flash')
 import plotly.express as px
-from config import nota_pie
-from contexto import *
+from config_base.config import nota_pie
+from prompts.contexto import *
 
 def calcular_media_movil(df, t, columnas = ['De Origen Provincial', 'De Origen Nacional']):
     """

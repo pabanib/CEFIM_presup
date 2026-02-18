@@ -1,19 +1,19 @@
 #%%
 import streamlit as st
 # Asumimos que todos estos archivos existen y tienen las funciones que definimos
-from carga_datos import cargar_y_procesar_datos
-from analisis_recursos import (
+from datos_y_analisis.carga_datos import cargar_y_procesar_datos
+from datos_y_analisis.analisis_recursos import (
     calcular_media_movil,
     graf_evol_recursos,
     comparar_mes_a_mes,
     graf_comp_prom
 )
-from motor_clasificador import ClasificadorIntencion
-from motor_ia_llm import RedactorEconomico, configurar_modelo_llm
-import estadisticas
-from contexto import explicacion_evol_recu, explicacion_comp_prom
+from motores.motor_clasificador import ClasificadorIntencion
+from motores.motor_ia_llm import RedactorEconomico, configurar_modelo_llm
+import datos_y_analisis.estadisticas as estadisticas
+from prompts.contexto import explicacion_evol_recu, explicacion_comp_prom
 
-from database import init_db, guardar_interaccion
+from config_base.database import init_db, guardar_interaccion
 
 init_db()  # Aseguramos que la base de datos esté inicializada
 # --- DEFINICIÓN DE NUESTRA CLASE "RECETA" ---

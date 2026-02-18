@@ -8,3 +8,20 @@ PresupMendoza_trabajo.ipynb
 pruebas.ipynb
 preguntas_clasificacion_estadisticas.csv
 entrenamiento
+# Python cache - todas las carpetas en el proyecto
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Archivos de modelos entrenados (optativo)
+*.joblib
+*.pkl
+
+# Base de datos local
+log_publico.db

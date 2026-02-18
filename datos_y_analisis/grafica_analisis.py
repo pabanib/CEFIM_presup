@@ -1,5 +1,5 @@
 import joblib
-from estadisticas import *
+from datos_y_analisis.estadisticas import *
 
 with open("cefim.txt", "r", encoding="utf-8") as f:
     cefim = f.read()

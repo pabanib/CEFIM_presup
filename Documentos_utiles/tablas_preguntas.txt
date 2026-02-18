@@ -1,0 +1,29 @@
+Tablas de guardado de preguntas y evaluaciones de las mismas.
+
+CREATE TABLE "interacciones" (
+	"id"	INTEGER,
+	"timestamp"	TEXT NOT NULL,
+	"pregunta"	TEXT NOT NULL,
+	"clasificacion_json"	TEXT,
+	"dato_recuperado"	TEXT,
+	"respuesta_final"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE "evaluaciones" (
+	"id"	INTEGER,
+	"intencion_pred"	TEXT,
+	"periodo_pred"	TEXT,
+	"estadistica_pred"	TEXT,
+	"intencion_real"	TEXT,
+	"periodo_real"	TEXT,
+	"estadistica_real"	TEXT,
+	"veracidad"	INTEGER,
+	"entendible"	INTEGER,
+	"profundidad"	INTEGER,
+	"CEFIM"	INTEGER,
+	"coherencia"	INTEGER,
+	"dato_falso"	INTEGER,
+	"comentarios"	TEXT,
+	PRIMARY KEY("id")
+);
