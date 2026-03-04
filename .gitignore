@@ -8,6 +8,17 @@ PresupMendoza_trabajo.ipynb
 pruebas.ipynb
 preguntas_clasificacion_estadisticas.csv
 entrenamiento
+config_base/database_viejo.py
+desarrollo 
+entrenamiento 
+pruebas
+app_old.py
+calsif_preguntas.txt
+Charla_.md
+CHEATSHEET.ps1
+COMANDO_RAPIDO.ps1
+README.md
+
 # Python cache - todas las carpetas en el proyecto
 __pycache__/
 *.py[cod]
@@ -19,8 +30,8 @@ __pycache__/
 dist/
 build/
 
+
 # Archivos de modelos entrenados (optativo)
-*.joblib
 *.pkl
 
 # Base de datos local
