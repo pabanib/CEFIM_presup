@@ -10,12 +10,19 @@ para asegurar que están disponibles en la memoria.
 from sklearn.base import BaseEstimator, TransformerMixin
 import re
 import spacy
+import subprocess
+import sys
 
 # Cargar modelo de lenguaje
 try:
     nlp = spacy.load("es_core_news_lg")
 except OSError:
-    nlp = spacy.load("es_core_news_sm")
+    try:
+        nlp = spacy.load("es_core_news_sm")
+    except OSError:
+        print("Descargando modelo de spacy (primera vez)...")
+        subprocess.check_call([sys.executable, "-m", "spacy", "download", "es_core_news_sm"])
+        nlp = spacy.load("es_core_news_sm")
 
 # Términos clave (igual que en entrenamiento.py)
 TERMINOS_FINANCIEROS_CLAVE = [
