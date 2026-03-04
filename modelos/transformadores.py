@@ -15,7 +15,7 @@ from pathlib import Path
 
 # Ruta al modelo local (relativa al archivo)
 _BASE_DIR = Path(__file__).parent
-_MODEL_PATH = _BASE_DIR  / "es_core_news_sm"
+_MODEL_PATH = _BASE_DIR  / "es_core_news_sm" / "es_core_news_sm-3.8.0"
 
 nlp = None
 try:
