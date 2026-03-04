@@ -6,5 +6,5 @@ psycopg2-binary>=2.9.10
 SQLAlchemy==2.0.25
 scikit-learn
 joblib
-spacy
-https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0-py3-none-any.whl
+spacy>=3.0.0
+
