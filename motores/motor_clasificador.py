@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 # Asegurar que la clase NormalizadorPreguntas esté disponible cuando se cargue el modelo
-from modelos.transformadores import NormalizadorPreguntas
+from transformadores import NormalizadorPreguntas
 
 class ClasificadorIntencion:
     def __init__(self, rutas_modelo=["modelo_periodo.joblib","modelo_estadistica.joblib"]): 
