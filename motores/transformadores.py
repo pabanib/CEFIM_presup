@@ -14,15 +14,22 @@ import subprocess
 import sys
 
 # Cargar modelo de lenguaje
+nlp = None
 try:
     nlp = spacy.load("es_core_news_lg")
 except OSError:
     try:
         nlp = spacy.load("es_core_news_sm")
     except OSError:
-        print("Descargando modelo de spacy (primera vez)...")
-        subprocess.check_call([sys.executable, "-m", "spacy", "download", "es_core_news_sm"])
-        nlp = spacy.load("es_core_news_sm")
+        try:
+            print("Descargando modelo de spacy (primera vez)...")
+            subprocess.check_call([sys.executable, "-m", "spacy", "download", "es_core_news_sm"], 
+                                 stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL)
+            nlp = spacy.load("es_core_news_sm")
+        except Exception as e:
+            print(f"⚠️ Advertencia: No se pudo cargar modelo de spacy. Error: {e}")
+            print("   El normalizador funcionará sin análisis lingüístico avanzado.")
+            nlp = None
 
 # Términos clave (igual que en entrenamiento.py)
 TERMINOS_FINANCIEROS_CLAVE = [
@@ -80,24 +87,28 @@ def normalizar_pregunta(texto: str) -> str:
         if termino in texto_norm:
             texto_norm = texto_norm.replace(termino, placeholder[0])
 
-    # --- PASO 3: Normalización basada en spaCy ---
-    doc = nlp(texto_norm)
-    tokens_procesados = []
+    # --- PASO 3: Normalización basada en spaCy (opcional) ---
+    if nlp is not None:
+        doc = nlp(texto_norm)
+        tokens_procesados = []
 
-    for token in doc:
-        if token.lemma_ in ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]:
-            tokens_procesados.append("[PERIODO_CONCRETO]")
-        elif token.lemma_ in ["hoy", "ayer", "semana", "mes", "año", "trimestre", "semestre", "década", "quinquenio"]:
-            if not (len(tokens_procesados) > 0 and tokens_procesados[-1] == "[PERIODO_RELATIVO]"):
-                tokens_procesados.append("[PERIODO_RELATIVO]")
-        elif token.text.startswith("[") and token.text.endswith("]"):
-            if not (len(tokens_procesados) > 0 and tokens_procesados[-1] == token.text):
-                tokens_procesados.append(token.text)
-        elif not token.is_stop and not token.is_punct and not token.is_digit:
-            tokens_procesados.append(token.lemma_)
+        for token in doc:
+            if token.lemma_ in ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]:
+                tokens_procesados.append("[PERIODO_CONCRETO]")
+            elif token.lemma_ in ["hoy", "ayer", "semana", "mes", "año", "trimestre", "semestre", "década", "quinquenio"]:
+                if not (len(tokens_procesados) > 0 and tokens_procesados[-1] == "[PERIODO_RELATIVO]"):
+                    tokens_procesados.append("[PERIODO_RELATIVO]")
+            elif token.text.startswith("[") and token.text.endswith("]"):
+                if not (len(tokens_procesados) > 0 and tokens_procesados[-1] == token.text):
+                    tokens_procesados.append(token.text)
+            elif not token.is_stop and not token.is_punct and not token.is_digit:
+                tokens_procesados.append(token.lemma_)
 
-    texto_final = " ".join(tokens_procesados)
-    texto_final = re.sub(r'\s+', ' ', texto_final).strip()
+        texto_final = " ".join(tokens_procesados)
+        texto_final = re.sub(r'\s+', ' ', texto_final).strip()
+    else:
+        # Sin spacy: apenas limpiar espacios múltiples
+        texto_final = re.sub(r'\s+', ' ', texto_norm).strip()
 
     return texto_final
 
