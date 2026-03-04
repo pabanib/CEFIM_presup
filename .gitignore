@@ -18,6 +18,7 @@ Charla_.md
 CHEATSHEET.ps1
 COMANDO_RAPIDO.ps1
 README.md
+modelos/transformadores_viejo.py
 
 # Python cache - todas las carpetas en el proyecto
 __pycache__/
