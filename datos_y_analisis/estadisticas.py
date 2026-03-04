@@ -14,7 +14,8 @@ estadisticas['Recaudación acumulada últimos 5 años'] = cumsum[cumsum.index.mo
 """
 
 # Clasificaciones válidas
-T_Estadistica = Literal["rec_actual", "variacion", "promedio", "evolución", "max_min"]
+#T_Estadistica = Literal["rec_actual", "variacion", "promedio", "evolución", "max_min"]
+T_Estadistica = Literal["rec_actual", "variacion", "evolución", "estadistica_simple", "proporcion"]
 T_Periodo = Literal["ultimo", "historico", "periodo_especifico"]
 
 class AnalizadorEstadistico:
@@ -30,12 +31,12 @@ class AnalizadorEstadistico:
             return self.recurso_actual(df_filtrado)
         elif tipo_estadistica == "variacion":
             return self.variacion(df_filtrado)
-        elif tipo_estadistica == "promedio":
-            return self.promedio(df_filtrado)
+        elif tipo_estadistica == "estadistica_simple":
+            return self.estadisticas_simples(df_filtrado)
         elif tipo_estadistica == "evolución":
             return self.evolucion(df_filtrado)
-        elif tipo_estadistica == "max_min":
-            return self.maximo_minimo(df_filtrado)
+        elif tipo_estadistica == "proporcion":
+            return self.proporcion(df_filtrado)
         else:
             raise ValueError(f"Tipo de estadística no reconocida: {tipo_estadistica}")
     
@@ -55,6 +56,7 @@ class AnalizadorEstadistico:
 
     # Funciones estadísticas (pueden ir mejorando con más lógica)
     def recurso_actual(self, df: pd.DataFrame):
+        #trae los últimos valores del df filtrado
         estadisticas = {}
         estadisticas['último periodo'] = df.iloc[-1]
         estadisticas['Acumulado en el año'] = df.resample('YE').sum().iloc[-1]
@@ -77,9 +79,55 @@ class AnalizadorEstadistico:
         return estadisticas
  
     def evolucion(self, df: pd.DataFrame):
+        """
+
+        Siempre recibe el DataFrame histórico completo.
+        """
         estadisticas = {}
-        estadisticas['tendencia_mensual'] = df.rolling(window=12).mean()
-        estadisticas['tendencia_anual'] = df.resample('YE').mean().rolling(window=4).mean()
+        analisis_ciclo = {}
+
+        ultimo_dato = df.iloc[-1]
+        fecha_actual = df.index[-1]
+
+        for col in df.columns:
+            serie = df[col]
+
+            # 1. Identificar Extremos Históricos
+            val_max = serie.max()
+            fecha_max = serie.idxmax()
+            val_min = serie.min()
+            fecha_min = serie.idxmin()
+
+            val_actual = ultimo_dato[col]
+
+            # 2. Calcular Distancias (Gap Analysis)
+            # Evitamos división por cero con max(val, 1)
+            distancia_al_pico = ((val_actual - val_max) / max(val_max, 1)) * 100
+            distancia_al_fondo = ((val_actual - val_min) / max(val_min, 1)) * 100
+
+            # 3. Tendencia Corto Plazo (Últimos 6 meses)
+            tendencia_reciente = serie.tail(6)
+            slope = (tendencia_reciente.iloc[-1] /tendencia_reciente.iloc[0]) -1
+            if slope > 0.05: # umbral de crecimiento del 5%
+                dir_corto_plazo = "recuperándose"
+            elif slope < -0.05: # umbral de caída del 5%
+                dir_corto_plazo = "retrayéndose"
+            else:
+                dir_corto_plazo = "estable"
+
+            # 4. Construcción del Relato para el LLM
+            # El LLM recibirá un string estructurado fácil de narrar
+            info = {
+                "estado_actual": val_actual,
+                "pico_historico": f"{val_max:.2f} (ocurrido en {fecha_max.date()})",
+                "fondo_historico": f"{val_min:.2f} (ocurrido en {fecha_min.date()})",
+                "situacion_vs_pico": f"{distancia_al_pico:.1f}% respecto al máximo histórico",
+                "situacion_vs_fondo": f"{distancia_al_fondo:.1f}% respecto al mínimo histórico",
+                "dinamica_reciente": f"Actualmente {dir_corto_plazo} en el corto plazo"
+            }
+            analisis_ciclo[col] = info
+
+        estadisticas['analisis_de_ciclo'] = analisis_ciclo
         return estadisticas
 
     def maximo_minimo(self, df: pd.DataFrame):
@@ -90,7 +138,56 @@ class AnalizadorEstadistico:
         estadisticas['minimo_historico_anual'] = df.resample('YE').mean().min()
         
         return estadisticas
+    
+    def estadisticas_simples(self, df: pd.DataFrame):
+        estadisticas = {}
+        #promedios
+        estadisticas['promedio_anual'] = df.resample('YE').mean()
+        estadisticas['promedio'] = df.mean()
+        estadisticas['promedio_mes'] = df.groupby(df.index.month).mean()
+        #maximos y minimos
+        estadisticas['maximo_historico_mensual'] = df.max()
+        estadisticas['minimo_historico_mensual'] = df.min()
+        estadisticas['maximo_historico_anual'] = df.resample('YE').mean().max()
+        estadisticas['minimo_historico_anual'] = df.resample('YE').mean().min()
+        #fechas maximos y minimos
+        estadisticas['fecha_maximo_mensual'] = df.idxmax()
+        estadisticas['fecha_minimo_mensual'] = df.idxmin()  
+        estadisticas['fecha_maximo_anual'] = df.resample('YE').mean().idxmax()
+        estadisticas['fecha_minimo_anual'] = df.resample('YE').mean().idxmin()
 
+        return estadisticas
+    
+    def proporcion(self, df: pd.DataFrame):
+        estadisticas = {}
+
+        # Definimos Totales (Manejando posible división por cero)
+        total_origen = (df['De Origen Provincial'] + df['De Origen Nacional']).replace(0, 1)
+        total_provincial = df['De Origen Provincial'].replace(0, 1)
+
+        # Helper para calcular y formatear
+        def calc_ratio(numerador, denominador):
+            ratio = (numerador / denominador) * 100
+            return {
+                "valor_periodo": ratio.iloc[-1], # Si es 1 mes, es ese valor
+                "promedio_periodo": ratio.mean() # Si es 1 mes, es igual al valor
+            }
+
+        # 1. Recursos Provinciales y Nacionales sobre Total
+        estadisticas['Participacion_Provincial_vs_Total'] = calc_ratio(df['De Origen Provincial'], total_origen)
+        estadisticas['Participacion_Nacional_vs_Total'] = calc_ratio(df['De Origen Nacional'], total_origen)
+
+        # 2. Impuestos sobre Total Provincial (De Origen Provincial)
+        estadisticas['IIBB_vs_Provincial'] = calc_ratio(df['Ingresos Brutos'], total_provincial)
+        estadisticas['Automotor_vs_Provincial'] = calc_ratio(df['Automotor'], total_provincial)
+        estadisticas['Inmobiliario_vs_Provincial'] = calc_ratio(df['Inmobiliario'], total_provincial)
+
+        # 3. Impuestos sobre Total General (Provincial + Nacional)
+        estadisticas['IIBB_vs_Total_General'] = calc_ratio(df['Ingresos Brutos'], total_origen)
+        estadisticas['Automotor_vs_Total_General'] = calc_ratio(df['Automotor'], total_origen)
+        estadisticas['Inmobiliario_vs_Total_General'] = calc_ratio(df['Inmobiliario'], total_origen)
+
+        return estadisticas
 
 # --- NUEVA FUNCIÓN: La "Puerta de Entrada" o "Llave de Arranque" ---
 def ejecutar_analisis_estadistico(df, clasificacion):
