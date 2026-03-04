@@ -6,7 +6,7 @@ from pathlib import Path
 
 # Asegurar que la clase NormalizadorPreguntas esté disponible cuando se cargue el modelo
 # Importar desde la carpeta entrenamiento
-sys.path.insert(0, str(Path(__file__).parent.parent / "entrenamiento"))
+#sys.path.insert(0, str(Path(__file__).parent.parent / "entrenamiento"))
 from transformadores import NormalizadorPreguntas  # ← CRÍTICO
 
 class ClasificadorIntencion:
