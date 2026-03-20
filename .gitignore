@@ -37,3 +37,4 @@ build/
 
 # Base de datos local
 log_publico.db
+*.db

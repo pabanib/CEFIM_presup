@@ -17,13 +17,13 @@ def _obtener_url_postgres():
     """Busca la URL de la base de datos en las variables de entorno (Streamlit Cloud)."""
     return os.getenv("DATABASE_URL")
 
-def init_db():
+def init_db(local=False):
     """
     Inicializa la base de datos (Postgres en la nube o SQLite local).
     """
     url = _obtener_url_postgres()
 
-    if url and psycopg2:
+    if url and psycopg2 and not local:
         # --- MODO NUBE (POSTGRESQL / NEON) ---
         try:
             conn = psycopg2.connect(url)
@@ -62,7 +62,7 @@ def init_db():
         conn.close()
         print("Base de datos SQLITE inicializada.")
 
-def guardar_interaccion(pregunta, clasificacion, dato_recuperado, respuesta_final):
+def guardar_interaccion(pregunta, clasificacion, dato_recuperado, respuesta_final, local=False, table_name="interacciones"):
     """
     Guarda una nueva interacción en la base de datos.
     """
@@ -72,7 +72,7 @@ def guardar_interaccion(pregunta, clasificacion, dato_recuperado, respuesta_fina
 
     url = _obtener_url_postgres()
 
-    if url and psycopg2:
+    if url and psycopg2 and not local:
         # --- MODO NUBE (POSTGRESQL / NEON) ---
         try:
             conn = psycopg2.connect(url)
@@ -99,9 +99,9 @@ def guardar_interaccion(pregunta, clasificacion, dato_recuperado, respuesta_fina
 
         # SQLite usa ? para la inserción segura
         cursor.execute("""
-        INSERT INTO interacciones (timestamp, pregunta, clasificacion_json, dato_recuperado, respuesta_final)
+        INSERT INTO {} (timestamp, pregunta, clasificacion_json, dato_recuperado, respuesta_final)
         VALUES (?, ?, ?, ?, ?)
-        """, interaction_data)
+        """.format(table_name), interaction_data)
 
         conn.commit()
         conn.close()
